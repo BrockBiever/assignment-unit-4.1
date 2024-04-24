@@ -15,8 +15,10 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName(name) {
-  return 'Hello, Brock!';
-} console.log(helloName())
+  return name 
+  ;
+} 
+console.log(helloName('Hello, Brock!'))
 // Remember to call the function to test
 
 
@@ -41,52 +43,53 @@ function multiplyThree(multi1,multi2,multi3) {
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
-function isPositive(number) {
-  if (number > 0) {
-    return;
-  }
-  return;};
 
-function TrueandFalse(number) { 
+
+function isPositive(number) { 
   
   if (number >= 0) {
-    true; console.log('number is true')
+    console.log(number, 'is positive' )
+    return true; 
   }
   else{
-    false; console.log('number is false')
+    console.log(number, 'is negative')
+    return false; 
   } 
-  return  ;
-} console.log(TrueandFalse(1))
+ ;
+} isPositive(1) ;
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-let array1= ['first', 'mid']
-function getLast(lastValue) {
-array1.push(lastValue)};
-; getLast('last')
-getLast('last last')
-console.log(array1)
+let array1 = ['first', 'last']
+function getLast(arr) {
+lastValue = arr[1] ;
+return lastValue
+};
 
+
+getLast(array1)
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find(value, array) {
+let array2 = [ '1', '2', '3', '4', '5']; 
 
+function findValue(arr){
+  I2F = arr[0] ;
+  for( let i = 0; i<arr.length ; i++ );
+if (I2F){
+  console.log(I2F, 'Found item');
+  return true; 
 }
-let sentence = [ 'I', 'think', 'I did', 'this', 'correctly']; 
-function findValue(placeHolderArray){
-  for(A=0; A<placeHolderArray.length ; A++ );
-if (placeHolderArray[0]){
-  true; console.log( placeHolderArray[0], 'true')
-}
-  else{ false; console.log('No Value')
+  else{ console.log('No item'); 
+  return false; 
   };
 
 
-} findValue(sentence);
+} console.log(findValue(array2));
 
 // ----------------------
 // Stretch Goals
