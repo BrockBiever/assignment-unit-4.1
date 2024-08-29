@@ -14,12 +14,12 @@ console.log('Test - should say "Hello World!"', hello());
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
-let Brock = "Brock" ;
-function helloName() {
-return "Hello, Your Name!";
+let brock = "Brock" ;
+function helloName(name) {
+return "Hello, "+ name + "!";
 }
 // Remember to call the function to test
-console.log(helloName()) ;
+console.log(helloName(name)) ;
 
 // 3. Function to add two numbers together & return the result
 function addNumbers(firstNumber ,secondNumber) {
@@ -59,12 +59,13 @@ function getLast(array) {
   }
 return array[array.length - 1]
 }
-console.log(getLast())
+let last = [3, 4, 9, 1, 0] ;
+console.log(getLast(last))
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
-  return array.indexOf(value) !== -1;
+   return array.indexOf(value) !== -1
 
 }
 ;
